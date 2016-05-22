@@ -44,6 +44,10 @@ body {
 	width: 600px;
 	margin: 0 auto;
 }
+
+.copyright {
+	color: #fff;
+}
 .loginForm {
 	
 	border: 1px solid;
