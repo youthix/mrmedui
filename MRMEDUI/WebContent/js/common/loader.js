@@ -2,7 +2,7 @@
  * 
  */
 
-jQuery.getScript("constant.js")
+jQuery.getScript("/constant.js")
 	.done(function() {
 		alert('success');
 		/* yay, all good, do something */
@@ -12,5 +12,6 @@ jQuery.getScript("constant.js")
 		/* boo, fall back to something else */
 });
 
-jQuery.getScript("../libs/jquery/jquery-2.2.4.min.js");
 jQuery.getScript("../libs/bootstrap/bootstrap.min.js");
+
+jQuery.getScript("../model/loginM.js");
