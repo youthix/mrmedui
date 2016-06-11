@@ -1,10 +1,9 @@
 /**
  * 
  */
-
-jQuery.getScript("/constant.js")
+jQuery.getScript("js/common/constant.js")
 	.done(function() {
-		alert('success');
+		//alert('success');
 		/* yay, all good, do something */
 	})
 	.fail(function() {
@@ -12,6 +11,7 @@ jQuery.getScript("/constant.js")
 		/* boo, fall back to something else */
 });
 
-jQuery.getScript("../libs/bootstrap/bootstrap.min.js");
+jQuery.getScript("js/libs/bootstrap/bootstrap.min.js");
 
-jQuery.getScript("../model/loginM.js");
+jQuery.getScript("js/model/loginM.js");
+jQuery.getScript("js/controller/restcaller.js");
