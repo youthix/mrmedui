@@ -7,6 +7,12 @@ function validateLoginResp(data){
 	}	
 }
 
+function failureHandlerLogin(jqXHR, textStatus){
+	console.log(jqXHR);
+	console.log(textStatus);
+	openErrorDialog(msgs["fatalM"],msgs["fatalT"]);
+}
+
 function checkResStatus(data){
 	var res="";
 	$.each(data,function(key,val){

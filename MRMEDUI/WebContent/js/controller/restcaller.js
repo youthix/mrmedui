@@ -1,6 +1,17 @@
 /**
  * 
  */
+function successHandler(data,varToUpdate,theContainer,source){
+	if(source=='login'){
+		validateLoginResp(data);
+	}
+}
+
+function failureHandler(jqXHR, textStatus,theContainer,source){
+	if(source=='login'){
+		failureHandlerLogin(jqXHR, textStatus);
+	}
+}
 
 function ajaxReqWithPlainInput(url,method,async,contentType,dataType,dataToSend,varToUpdate,theContainer,source){
 	var request=$.ajax({
@@ -15,7 +26,7 @@ function ajaxReqWithPlainInput(url,method,async,contentType,dataType,dataToSend,
 		successHandler(data,varToUpdate,theContainer,source);
 	});
 	request.fail(function(jqXHR, textStatus) {
-		alert('Request failed: '+textStatus);
+		failureHandler(jqXHR, textStatus,theContainer,source);
 	});
 }
 
@@ -34,11 +45,6 @@ function ajaxReqWithComplexInput(url,method,async,contentType,dataType,dataToSen
 		successHandler(data,varToUpdate,theContainer,source);
 	});
 	request.fail(function(jqXHR, textStatus) {
-		alert('Request failed: '+textStatus);
+		failureHandler(jqXHR, textStatus,theContainer,source);
 	});
-}
-function successHandler(data,varToUpdate,theContainer,source){
-	if(source=='login'){
-		validateLoginResp(data);
-	}
 }

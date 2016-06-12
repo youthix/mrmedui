@@ -13,7 +13,9 @@ var url = {
 };
 
 var msgs = { 
-		  "unauthT" : "UNAUTHORIZED"
+		  "unauthT" : "UNAUTHORIZED",
+		  "fatalT" :  "FATAL_PROBLEM",
+		  "fatalM" : "OOPS something went wrong here! <br> Please contact support team and report this error!"
 		   };
 
 var bid="stockist_dummy";
