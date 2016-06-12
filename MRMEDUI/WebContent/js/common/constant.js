@@ -14,9 +14,13 @@ var url = {
 
 var msgs = { 
 		  "unauthT" : "UNAUTHORIZED",
-		  "fatalT" :  "FATAL_PROBLEM",
+		  "fatalT" :  "FATAL#",
 		  "fatalM" : "OOPS something went wrong here! <br> Please contact support team and report this error!"
 		   };
+
+var errorCodes={
+		"404":"ERROR_404 "
+};
 
 var bid="stockist_dummy";
 
