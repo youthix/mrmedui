@@ -16,12 +16,22 @@
 	display: block;
 }
 
+
+.err_title_border{	
+	border-bottom:solid 2px #336699;	
+	padding: 8px;	
+}
 .err_title{
-	border-bottom:solid 2px #336699;
+	top: 1%;	
+	left: 1%;
+	height: 50px;
+	width: 50px;
 	backgroud: #ffffff;
-	padding: 4px;
-	color:red;
+	font-family: Verdana;
+	font-size: 10pt;
+	color: RED;
 	font-weight: bold;
+	padding: 8px;	
 }
 
 .err_msg{
@@ -32,4 +42,7 @@
 
 .align_right{
 	text-align: right;
+}
+.align_center{
+	text-align: center;
 }

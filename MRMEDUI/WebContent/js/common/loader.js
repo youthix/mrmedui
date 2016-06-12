@@ -10,11 +10,11 @@ jQuery.getScript("js/common/constant.js")
 		alert('Failure');
 });
 
-function openErrorDialog(msg)
+function openErrorDialog(msg,title)
 {
   $( "#errorPanel" ).load( "html/error/default.html", function() {
 		  //console.log( "Load was performed." );
-	  setDialogMsg(msg);
+	  setDialogMsg(msg,title);
   });  
   $("#errorPanel").css("display","block");     
 }

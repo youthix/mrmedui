@@ -33,8 +33,7 @@ function showError(data){
 		if(key=="resStatus"){
 			$.each(val,function(key,val){
 				if(key=="msg"){
-				//alert(val);	
-					openErrorDialog(val);
+					openErrorDialog(val,msgs["unauthT"]);
 				}				
 			});
 		}

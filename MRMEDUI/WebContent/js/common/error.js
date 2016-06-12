@@ -5,7 +5,8 @@ function loadCloseBtnHanlder(){
 	});
 }
 
-function setDialogMsg(msg){	
+function setDialogMsg(msg,title){	
+	$("#errTitle").html(title);
 	$("#errMsg").html(msg);
 }
 

@@ -12,6 +12,10 @@ var url = {
   "saveCustomer" : "http://localhost/mrmedservices/rest/service/get/customer",
 };
 
+var msgs = { 
+		  "unauthT" : "UNAUTHORIZED"
+		   };
+
 var bid="stockist_dummy";
 
 var reqType={
