@@ -1,0 +1,28 @@
+.overlay_err_dialog{
+	position:fixed;
+	top: 52%;	
+	left: 49%;
+	height: 250px;
+	width:400px;
+	margin-left: -190px;
+	margin-top: -100px;
+	background: #ffffff;
+	border: 2px solid #336699;	
+	z-index: 101;
+	opacity: .950;
+	font-family: Verdana;
+	font-size: 10pt;
+	display: block;
+}
+
+.err_title{
+	border-bottom:solid 2px #336699;
+	backgroud: #ffffff;
+	padding: 4px;
+	color: black;
+	font-weight: bold;
+}
+
+.align_right{
+	text-align: right;
+}
