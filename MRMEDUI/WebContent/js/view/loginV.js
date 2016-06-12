@@ -1,5 +1,7 @@
 jQuery.getScript("js/model/loginM.js");
 
+
+
 function loadLoginClickHandler(){	
 	$("#login").on("click",function(e){	
 		e.preventDefault();
@@ -14,9 +16,11 @@ function loadLoginClickHandler(){
 
 
 function loadNextPage(){
-	window.location.href='BillingPage.html';
+	$( "#mainPanel" ).load( "BillingPage.html", function() {
+		 // console.log( "Load billing was performed." );
+		});	
 }
 
-$(document).ready(function(){	
-	loadLoginClickHandler();
+$(document).ready(function(){
+	loadLoginClickHandler();	
 });
