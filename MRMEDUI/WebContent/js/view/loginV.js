@@ -16,8 +16,8 @@ function loadLoginClickHandler(){
 
 
 function loadNextPage(){
-/*	$("#mainPanel").load( "BillingPage.html", function() {
-		 // console.log( "Load billing was performed." );		
+	/*	$("#mainPanel").load( "BillingPage.html", function() {
+			 // console.log( "Load billing was performed." );		
 	});	*/
 	window.location.href="BillingPage.html";return false;
 }
