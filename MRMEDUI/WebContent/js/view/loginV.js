@@ -16,9 +16,10 @@ function loadLoginClickHandler(){
 
 
 function loadNextPage(){
-	$( "#mainPanel" ).load( "BillingPage.html", function() {
+	$("#mainPanel").load( "BillingPage.html", function() {
 		 // console.log( "Load billing was performed." );
-		});	
+		
+		});		
 }
 
 $(document).ready(function(){
