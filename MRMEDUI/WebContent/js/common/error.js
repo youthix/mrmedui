@@ -5,6 +5,10 @@ function loadCloseBtnHanlder(){
 	});
 }
 
+function setDialogMsg(msg){	
+	$("#errMsg").html(msg);
+}
+
 $(document).ready(function(){
 	loadCloseBtnHanlder();
 });

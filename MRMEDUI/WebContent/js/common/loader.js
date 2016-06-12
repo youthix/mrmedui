@@ -14,15 +14,15 @@ function openErrorDialog(msg)
 {
   $( "#errorPanel" ).load( "html/error/default.html", function() {
 		  //console.log( "Load was performed." );
-		});	
-  console.log(msg);  
-  $("#errorPanel").css("display","block"); 
+	  setDialogMsg(msg);
+  });  
+  $("#errorPanel").css("display","block");     
 }
 
 function loadLoginPage(){
 	$( "#mainPanel" ).load( "html/login/login.html", function() {
 		  //console.log( "Load was performed." );
-		});	
+	 });	
 }
 
 jQuery.getScript("js/libs/bootstrap/bootstrap.min.js");

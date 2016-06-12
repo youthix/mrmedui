@@ -8,6 +8,7 @@
 	margin-top: -100px;
 	background: #ffffff;
 	border: 2px solid #336699;	
+	border-radius: 15px;
 	z-index: 101;
 	opacity: .950;
 	font-family: Verdana;
@@ -19,7 +20,13 @@
 	border-bottom:solid 2px #336699;
 	backgroud: #ffffff;
 	padding: 4px;
-	color: black;
+	color:red;
+	font-weight: bold;
+}
+
+.err_msg{
+	padding: 20px;
+	color: #000000;
 	font-weight: bold;
 }
 
