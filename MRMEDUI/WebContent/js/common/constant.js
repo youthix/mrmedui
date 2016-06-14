@@ -17,8 +17,8 @@ var msgs = {
 		  "unauthT" : "UNAUTHORIZED",
 		  "fatalT" :  "FATAL#",
 		  "fatalM" : "OOPS something went wrong here! <br> Please contact support team and report this error!",
-		  "noSearchT" : "SEARCH_NOT_SUCCESSFUL",
-		  "noSearchM" : "No record matcching your search criteria is found.<br>Please try again.",
+		  "noSearchT" : "SEARCH_UNSUCCESSFUL",
+		  "noSearchM" : "No record matching your search criteria is found.<br>Please try again.",
 		   };
 
 var errorCodes={
