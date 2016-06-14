@@ -10,16 +10,21 @@ var url = {
   "saveUser" : "http://localhost/mrmedservices/rest/service/get/users",
   "getCustomer" : "http://localhost/mrmedservices/rest/service/get/customer",
   "saveCustomer" : "http://localhost/mrmedservices/rest/service/get/customer",
+  "searchStock" : "http://localhost/mrmedservices/rest/service/search/stock"
 };
 
 var msgs = { 
 		  "unauthT" : "UNAUTHORIZED",
 		  "fatalT" :  "FATAL#",
-		  "fatalM" : "OOPS something went wrong here! <br> Please contact support team and report this error!"
+		  "fatalM" : "OOPS something went wrong here! <br> Please contact support team and report this error!",
+		  "noSearchT" : "SEARCH_NOT_SUCCESSFUL",
+		  "noSearchM" : "No record matcching your search criteria is found.<br>Please try again.",
 		   };
 
 var errorCodes={
-		"404":"ERROR_404 "
+		"404":"ERROR_404 ",
+		"500":"ERROR_500 ",
+		"404":"ERROR_401 "
 };
 
 var bid="stockist_dummy";

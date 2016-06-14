@@ -16,10 +16,10 @@ function loadLoginClickHandler(){
 
 
 function loadNextPage(){
-	/*	$("#mainPanel").load( "BillingPage.html", function() {
+		$("#mainPanel").load( "html/billing/billing.html", function() {
 			 // console.log( "Load billing was performed." );		
-	});	*/
-	window.location.href="BillingPage.html";return false;
+	});	
+	//window.location.href="html/billing/billing.html";return false;
 }
 
 $(document).ready(function(){

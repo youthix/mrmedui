@@ -5,11 +5,17 @@ function successHandler(data,varToUpdate,theContainer,source){
 	if(source=='login'){
 		validateLoginResp(data);
 	}
+	else if(source=='searchProd'){
+		loadSearchProdResults(data);
+	}
 }
 
 function failureHandler(jqXHR, textStatus,theContainer,source){
 	if(source=='login'){
 		failureHandlerLogin(jqXHR, textStatus);
+	}
+	else if(source=='searchProd'){
+		failureHandlerSearchProduct(jqXHR, textStatus);
 	}
 }
 
