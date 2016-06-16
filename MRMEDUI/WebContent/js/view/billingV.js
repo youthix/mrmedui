@@ -5,9 +5,7 @@ function loadSearchProdClickHandler(){
 	$("#searchProdBtn").on("click",function(e){	
 		e.preventDefault();
 		var vSearchProdTxt=$("#searchProdTxt").val();		
-		
-		var dataToSend="{\"sl\":[{\"name\":\""+vSearchProdTxt+"\"}],\"bid\":\""+bid+"\",\"sp\":\"\"}";	
-		console.log(dataToSend);
+		var dataToSend="{\"sl\":[{\"name\":\""+vSearchProdTxt+"\"}],\"bid\":\""+bid+"\",\"sp\":\"\"}";		
 		ajaxReqWithComplexInput(url["searchStock"],reqType["post"],
 				true,contentType["json"],dataType["json"],
 				dataToSend,null,null,"searchProd");		

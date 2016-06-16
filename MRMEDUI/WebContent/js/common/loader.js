@@ -18,13 +18,12 @@ function getContainerClone(sectionVar){
 	}
 	else clonedSection=$(theContainer[0]).clone(true);
 	//And appending it just after current container
-	$(clonedSection).insertAfter(theContainer[theContainer.length-1]);
-	console.log(clonedSection);
+	$(clonedSection).insertAfter(theContainer[theContainer.length-1]);	
 	return clonedSection;
 }
 
 function removeTopRowInContainer(sectionVar){
-	var theContainer=$(sectionVar);
+	var theContainer=$(sectionVar);	
 	$(theContainer[0]).remove();
 }
 

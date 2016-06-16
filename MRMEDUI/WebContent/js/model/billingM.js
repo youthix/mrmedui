@@ -21,10 +21,8 @@ function populateSearchProdTable(data){
 			}
 			else{
 				$.each(val,function(key,val){
-					var rowContainer=getContainerClone("#"+repeatDivs["prod"]);
-					console.log(rowContainer);
-					$.each(val,function(key,val){
-						console.log(key);
+					var rowContainer=getContainerClone("#"+repeatDivs["prod"]);					
+					$.each(val,function(key,val){						
 					if(key=="bat")	{
 						$(rowContainer.find("#bat")).html(val);
 					}
@@ -38,7 +36,8 @@ function populateSearchProdTable(data){
 						$(rowContainer.find("#name")).html(val);
 					}
 					else if(key=="type")	{
-						var h="<img src=\"images/logo_mini.png\" height=\"20px\" width=\"20px\" ";
+						var h="<img src=\"images/logo_mini.png\" height=\"20px\" width=\"20px\" />";
+						console.log(h);
 						$(rowContainer.find("#type")).html(h);
 					}						
 					});
@@ -48,7 +47,7 @@ function populateSearchProdTable(data){
 		 }
 		});
 	//Remove Sample container
-	removeTopRowInContainer(repeatDivs["prod"]);
+	removeTopRowInContainer("#"+repeatDivs["prod"]);
 	}
 
 
