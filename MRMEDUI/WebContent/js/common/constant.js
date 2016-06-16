@@ -13,6 +13,10 @@ var url = {
   "searchStock" : "http://localhost/mrmedservices/rest/service/search/stock"
 };
 
+var repeatDivs={
+		"prod" : "prodRow"
+}
+
 var msgs = { 
 		  "unauthT" : "UNAUTHORIZED",
 		  "fatalT" :  "FATAL#",

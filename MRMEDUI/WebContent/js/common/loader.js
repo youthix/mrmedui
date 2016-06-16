@@ -10,6 +10,34 @@ jQuery.getScript("js/common/constant.js")
 		alert('Failure');
 });
 
+function getContainerClone(sectionVar){
+	var theContainer=$(sectionVar);
+	var clonedSection="";
+	if(theContainer.length==1){
+		clonedSection=$(theContainer).clone(true);
+	}
+	else clonedSection=$(theContainer[0]).clone(true);
+	//And appending it just after current container
+	$(clonedSection).insertAfter(theContainer[theContainer.length-1])
+}
+
+function removeTopRowInContainer(sectionVar){
+	var theContainer=$(sectionVar);
+	$(theContainer[0]).remove();
+}
+
+
+function getContainerCloneWithRow(sectionVar,rowSelectorVar){
+	var theContainer=$(sectionVar).find(rowSelectorVar);
+	var clonedSection="";
+	if(theContainer.length==1){
+		clonedSection=$(theContainer).clone(true);
+	}
+	else clonedSection=$(theContainer[0]).clone(true);
+	//And appending it just after current container
+	$(clonedSection).insertAfter(theContainer[theContainer.length-1])
+}
+
 function openErrorDialog(msg,title)
 {
   $( "#errorPanel" ).load( "html/error/default.html", function() {
