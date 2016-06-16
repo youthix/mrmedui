@@ -22,14 +22,17 @@ function getContainerClone(sectionVar){
 	return clonedSection;
 }
 
-function removeTopRowInContainer(sectionVar){
+function hideTopRowInContainer(sectionVar){
 	var theContainer=$(sectionVar);	
-	$(theContainer[0]).remove();
+	$(theContainer[0]).hide();
 }
 
 function resetContainer(sectionVar){
-	//var theContainer=$(sectionVar);	
-	//$(theContainer[0]).empty();
+	var theContainer=$(sectionVar);	
+	console.log(theContainer.length);
+	for(var i=1;i<=theContainer.length;i++){
+	console.log(theContainer[i])	;
+	$(theContainer[i]).remove();}
 }
 
 

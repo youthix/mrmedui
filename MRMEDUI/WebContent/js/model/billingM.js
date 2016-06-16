@@ -46,7 +46,7 @@ function populateSearchProdTable(data){
 		 }
 		});
 	//Remove Sample container
-	removeTopRowInContainer("#"+repeatDivs["prod"]);
+	hideTopRowInContainer("#"+repeatDivs["prod"]);
 	}
 
 
