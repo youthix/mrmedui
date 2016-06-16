@@ -12,13 +12,15 @@ jQuery.getScript("js/common/constant.js")
 
 function getContainerClone(sectionVar){
 	var theContainer=$(sectionVar);
-	var clonedSection="";
+	var clonedSection="";	
 	if(theContainer.length==1){
 		clonedSection=$(theContainer).clone(true);
 	}
 	else clonedSection=$(theContainer[0]).clone(true);
 	//And appending it just after current container
-	$(clonedSection).insertAfter(theContainer[theContainer.length-1])
+	$(clonedSection).insertAfter(theContainer[theContainer.length-1]);
+	console.log(clonedSection);
+	return clonedSection;
 }
 
 function removeTopRowInContainer(sectionVar){
@@ -35,7 +37,8 @@ function getContainerCloneWithRow(sectionVar,rowSelectorVar){
 	}
 	else clonedSection=$(theContainer[0]).clone(true);
 	//And appending it just after current container
-	$(clonedSection).insertAfter(theContainer[theContainer.length-1])
+	$(clonedSection).insertAfter(theContainer[theContainer.length-1]);
+	return clonedSection;
 }
 
 function openErrorDialog(msg,title)

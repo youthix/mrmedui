@@ -18,9 +18,37 @@ function populateSearchProdTable(data){
 			if(val.length<=0){
 				openErrorDialog(msgs["noSearchM"],msgs["noSearchT"]);
 				return false;
-			}			
+			}
+			else{
+				$.each(val,function(key,val){
+					var rowContainer=getContainerClone("#"+repeatDivs["prod"]);
+					console.log(rowContainer);
+					$.each(val,function(key,val){
+						console.log(key);
+					if(key=="bat")	{
+						$(rowContainer.find("#bat")).html(val);
+					}
+					else if(key=="expDt")	{
+						$(rowContainer.find("#expDt")).html(val);
+					}
+					else if(key=="lQty")	{
+						$(rowContainer.find("#lQty")).html(val);
+					}
+					else if(key=="name")	{
+						$(rowContainer.find("#name")).html(val);
+					}
+					else if(key=="type")	{
+						var h="<img src=\"images/logo_mini.png\" height=\"20px\" width=\"20px\" ";
+						$(rowContainer.find("#type")).html(h);
+					}						
+					});
+					
+				});
+			}
 		 }
 		});
+	//Remove Sample container
+	removeTopRowInContainer(repeatDivs["prod"]);
 	}
 
 
