@@ -36,8 +36,7 @@ function populateSearchProdTable(data){
 						$(rowContainer.find("#name")).html(val);
 					}
 					else if(key=="type")	{
-						var h="<img src=\"images/logo_mini.png\" height=\"20px\" width=\"20px\" />";
-						console.log(h);
+						var h="<img src=\"images/logo_mini.png\" height=\"20px\" width=\"20px\" />";						
 						$(rowContainer.find("#type")).html(h);
 					}						
 					});

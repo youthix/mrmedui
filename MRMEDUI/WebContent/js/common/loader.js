@@ -27,6 +27,11 @@ function removeTopRowInContainer(sectionVar){
 	$(theContainer[0]).remove();
 }
 
+function resetContainer(sectionVar){
+	//var theContainer=$(sectionVar);	
+	//$(theContainer[0]).empty();
+}
+
 
 function getContainerCloneWithRow(sectionVar,rowSelectorVar){
 	var theContainer=$(sectionVar).find(rowSelectorVar);

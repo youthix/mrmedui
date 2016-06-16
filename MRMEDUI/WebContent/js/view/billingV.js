@@ -12,6 +12,13 @@ function loadSearchProdClickHandler(){
 	});	
 }
 
+function loadResetProdClickHandler(){	
+	$("#resetProdBtn").on("click",function(e){	
+		e.preventDefault();			
+		resetContainer("#"+repeatDivs["prod"]);
+	});	
+}
+
 /*
 function loadNextPage(){
 		$("#mainPanel").load( "BillingPage.html", function() {
@@ -22,4 +29,5 @@ function loadNextPage(){
 
 $(document).ready(function(){
 	loadSearchProdClickHandler();	
+	loadResetProdClickHandler();
 });
