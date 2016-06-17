@@ -12,7 +12,7 @@ function failureHandlerSearchProduct(jqXHR, textStatus){
 }
 
 function populateSearchProdTable(data){
-	
+	var rowContainer="";
 	$.each(data,function(key,val){
 		if(key=="sl"){
 			if(val.length<=0){
@@ -21,7 +21,8 @@ function populateSearchProdTable(data){
 			}
 			else{
 				$.each(val,function(key,val){
-					var rowContainer=getContainerClone("#"+repeatDivs["prod"]);					
+					rowContainer=getContainerClone("#"+repeatDivs["prod"]);					
+					//rowContainer=getContainerCloneWithRow("#prodBody","#"+repeatDivs["prod"]);
 					$.each(val,function(key,val){						
 					if(key=="bat")	{
 						$(rowContainer.find("#bat")).html(val);
@@ -46,7 +47,7 @@ function populateSearchProdTable(data){
 		 }
 		});
 	//Remove Sample container
-	hideTopRowInContainer("#"+repeatDivs["prod"]);
+	hideTopRowInContainer("#prodBody");
 	}
 
 

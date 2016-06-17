@@ -4,6 +4,7 @@ jQuery.getScript("js/model/billingM.js");
 function loadSearchProdClickHandler(){	
 	$("#searchProdBtn").on("click",function(e){	
 		e.preventDefault();
+		resetContainer("#prodBody");
 		var vSearchProdTxt=$("#searchProdTxt").val();		
 		var dataToSend="{\"sl\":[{\"name\":\""+vSearchProdTxt+"\"}],\"bid\":\""+bid+"\",\"sp\":\"\"}";		
 		ajaxReqWithComplexInput(url["searchStock"],reqType["post"],
@@ -15,7 +16,7 @@ function loadSearchProdClickHandler(){
 function loadResetProdClickHandler(){	
 	$("#resetProdBtn").on("click",function(e){	
 		e.preventDefault();			
-		resetContainer("#"+repeatDivs["prod"]);
+		resetContainer("#prodBody");
 	});	
 }
 
