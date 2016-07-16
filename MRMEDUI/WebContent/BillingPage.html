@@ -1,15 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <title>Mr.Med-Billing</title>
-	<link rel="shortcut icon" type="image/x-icon"
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="shortcut icon" type="image/x-icon"
 	href="./images/favicon.ico">
-	<script>
-	//window.history.forward();
+<script>
+	window.history.forward();
 	</script>
-	<!-- Add Styles Here -->
+<!-- Add Styles Here -->
 <!-- 	<link rel="stylesheet" href="./css/bootstrap.css">
 -->
 <link rel="stylesheet" href="./css/bootstrap.css">
@@ -17,6 +17,7 @@
 <!-- Add Scripts Here -->
 <script src="./js/jquery.min.js"></script>
 <script src="./js/bootstrap.js"></script>
+
 </head>
 
 <!-- start body -->
@@ -24,252 +25,211 @@
 
 
 	<!-- start navbar -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-<div class="navbar-header">
-<a class="navbar-brand label-danger" href="#"><span class=" glyphicon glyphicon-plus "></span> Mr. Med </a>
-</div>
-<div>
-<ul class="h5 nav navbar-nav">
-<li><a href="#"><span class="glyphicon glyphicon-home"></span><b>
-HOME </b></a></li>
-<li><a href="./BillingPage.html"><span
-class="glyphicon glyphicon-shopping-cart"></span><b> BILLING </b></a></li>
-<li><a href="#"><span
-class="glyphicon glyphicon-circle-arrow-down"></span><b> PURCHASE</b></a></li>
-<li><a href="./InventoryPage.html"><span class="glyphicon glyphicon-pencil"></span><b>
-INVENTORY</b></a></li>
-<li><a href="#"><span class="glyphicon glyphicon-piggy-bank"></span><b>
-FINANCIALS</b></a></li>
-<li><a href="#"><span class="glyphicon glyphicon-user"></span><b>
-CRM</b></a></li>
-<li><a href="./ReportsPage.html"><span class="glyphicon glyphicon-stats"></span><b>
-REPORTS</b></a></li>
-<li><a href="#"><span class="glyphicon glyphicon-wrench"></span><b>
-ADMIN</b></a></li>
-</ul>
-<ul class="nav navbar-nav navbar-right">
-<li><a class="navbar-brand" href="#"><span
-	class="glyphicon glyphicon-envelope"></span> </a></li>
-	<li><a class="navbar-brand" href="#"><span
-		class="glyphicon glyphicon-question-sign"></span> </a></li>
-		<li><a class="navbar-brand " href="#"><span
-			class="glyphicon glyphicon-off"></span> &nbsp;&nbsp;</a></li>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="navbar-header">
+		<a class="navbar-brand label-danger" href="#"><span
+			class=" glyphicon glyphicon-plus "></span> Mr. Med </a>
+	</div>
+	<div>
+		<ul class="h5 nav navbar-nav">
+			<li><a href="#"><span class="glyphicon glyphicon-home"></span><b>
+						HOME </b></a></li>
+			<li class="dropdown"><a href="./BillingPage.html"
+				class="dropdown-toggle" data-toggle="dropdown" role="button"
+				aria-haspopup="true" aria-expanded="false"><span
+					class="glyphicon glyphicon-shopping-cart"></span><b> BILLING </b> <span
+					class="caret"></span></a>
+				<ul class="dropdown-menu btn-default active">
+					<li><a href="#"><b>NEW BILL</b></a></li>
+					<li><a href="#"><b>SEARCH BILL(S) </b></a></li>
+					<li><a href="#"><b>RE-USE OLD BILL </b></a></li>
+					<li><a href="#"><b>PENDING BILLS </b></a></li>
+
+				</ul></li>
+				<li class="dropdown"><a href="#"
+				class="dropdown-toggle" data-toggle="dropdown" role="button"
+				aria-haspopup="true" aria-expanded="false"><span
+					class="glyphicon glyphicon-circle-arrow-down"></span><b> PURCHASE </b> <span
+					class="caret"></span></a>
+				<ul class="dropdown-menu btn-default active">
+					<li><a href="#"><b>NEW PO </b></a></li>
+					<li><a href="#"><b>SEARCH PO(S)</b></a></li>
+					<li><a href="#"><b>MANAGE RETURNS</b></a></li>
+
+				</ul></li>
+			
+			<li class="dropdown"><a href="./InventoryPage.html"
+				class="dropdown-toggle" data-toggle="dropdown" role="button"
+				aria-haspopup="true" aria-expanded="false"><span
+					class="glyphicon glyphicon-pencil"></span><b> INVENTORY </b> <span
+					class="caret"></span></a>
+				<ul class="dropdown-menu btn-default active">
+					<li><a href="./InventoryPage.html"><b>SEARCH </b></a></li>
+					<li><a href="#"><b>UPDATE PRODUCTS</b></a></li>
+					<li><a href="#"><b>ADD STOCK ENTRY</b></a></li>
+					<li><a href="#"><b>EXPIRED/ LOW STOCKS</b></a></li>
+					<li><a href="#"><b>MANAGE STOCK LOSS</b></a></li>
+				</ul></li>
+				<li class="dropdown"><a href="#"
+				class="dropdown-toggle" data-toggle="dropdown" role="button"
+				aria-haspopup="true" aria-expanded="false"><span
+					class="glyphicon glyphicon-piggy-bank"></span><b> FINANCIALS </b> <span
+					class="caret"></span></a>
+				<ul class="dropdown-menu btn-default active">
+					<li><a href="./InventoryPage.html"><b>CURRENT STATUS </b></a></li>
+					<li><a href="#"><b>CASH FLOW STATEMENT</b></a></li>
+					<li><a href="#"><b>BALANCE SHEET</b></a></li>
+					<li><a href="#"><b>MANAGE FINANCIAL YEAR </b></a></li>
+					<li><a href="#"><b>TAX CALCULATIONS</b></a></li>
+					<li><a href="#"><b>RECONCILIATION</b></a></li>
+
+
+				</ul></li>
+				<li class="dropdown"><a href="./InventoryPage.html"
+				class="dropdown-toggle" data-toggle="dropdown" role="button"
+				aria-haspopup="true" aria-expanded="false"><span
+					class="glyphicon glyphicon-user"></span><b> CRM </b> <span
+					class="caret"></span></a>
+				<ul class="dropdown-menu btn-default active">
+					<li><a href="./InventoryPage.html"><b>SEARCH</b></a></li>
+					<li><a href="#"><b>ADD CUSTOMER</b> </a></li>
+					<li><a href="#"><b>ADD SUPPLIER</b> </a></li>
+					<li><a href="#"><b>PROMOTIONS/ OFFERS</b> </a></li>
+					<li><a href="#"><b>LOYALITY PROGRAM</b> </a></li>
+
+				</ul></li>
+			
+			
+			<li class="dropdown"><a href="./ReportsPage.html"
+				class="dropdown-toggle" data-toggle="dropdown" role="button"
+				aria-haspopup="true" aria-expanded="false"><span
+					class="glyphicon glyphicon-stats"></span><b> REPORTS</b> <span
+					class="caret"></span></a>
+				<ul class="dropdown-menu btn-default active">
+					<li><a href="#"><b>ANALYTICS</b></a></li>
+					<li><a href="#"><b>MIS</b></a></li>
+					<li><a href="#"><b>SCHEDULED REPORTS</b></a></li>
+				</ul></li>
+
+			<li class="dropdown"><a href="#" class="dropdown-toggle"
+				data-toggle="dropdown" role="button" aria-haspopup="true"
+				aria-expanded="false"><span class="glyphicon glyphicon-wrench"></span><b>
+						ADMIN</b> <span class="caret"></span></a>
+				<ul class="dropdown-menu btn-default active">
+					<li><a href="#"><b>APP SETTINGS</b></a></li>
+					<li><a href="#"><b>MASTER DATA SETUP</b></a></li>
+					<li><a href="#"><b>DATABASE BACKUP</b></a></li>
+				</ul></li>
+
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a class="navbar-brand" href="#"><span
+					class="glyphicon glyphicon-envelope"></span> </a></li>
+			<li><a class="navbar-brand" href="#"><span
+					class="glyphicon glyphicon-question-sign"></span> </a></li>
+			<li><a class="navbar-brand " href="#"><span
+					class="glyphicon glyphicon-off"></span> &nbsp;&nbsp;</a></li>
 
 		</ul>
 	</div>
-</nav>
+	</nav>
 
-											<br>
-											<br>
-											<br>
+	<br>
+	<br>
+	<br>
 
-											<!-- end navbar -->
-
-											<table></table>
-
-											<div class="">
-												<div class="panel-body ">
-
-													<div class=" bs-component col-lg-3">
-														<form class="form-horizontal">
-															<b>CUSTOMER DETAILS</b> <br>
-															<br>
+	<!-- end navbar -->
 
 
-															<fieldset>
-																<div class="form-group">
-																	<div class="col-lg-8 input-group">
-																		<input type="text" class="form-control" id="inputName"
-																		placeholder="Name"> <span class="input-group-addon"><span
-																		class="glyphicon glyphicon-user"></span></span>
-																	</div>
-																</div>
-																<div class="form-group">
-																	<div class="col-lg-8 input-group">
-																		<input type="text" class="form-control" id="inputEmail"
-																		placeholder="Email"> <span class="input-group-addon"><span
-																		class="glyphicon glyphicon-search"></span></span>
+	<div>
+		<div class="panel-body">
 
-																	</div>
-																</div>
-																<div class="form-group">
-																	<div class="col-lg-8 input-group">
-																		<input type="number" class="form-control " id="inputContactNo"
-																		placeholder="Contact No."> <span
-																		class="input-group-addon"><span
-																		class="glyphicon glyphicon-search"></span></span>
-
-																	</div>
-																</div>
-																<div class="form-group">
-																	<div class="col-lg-8 input-group">
-																		<textarea class="form-control" rows="1"
-																		id="inputCustomerAddress" placeholder="Customer Address"></textarea>
-																		<span class="input-group-addon"><span
-																			class="glyphicon glyphicon-search"></span></span>
-																		</div>
-																	</div>
-
-																	<div class="form-group">
-																		<div>
-																			<button type="reset" class="btn  ">RESET</button>
-																			<button type="submit" class="btn btn-primary ">SAVE</button>
-																			<button type="submit" class="btn btn-primary ">RESGISTER NEW CUSTOMER</button>
-
-																			</div>
-																		</div>
-																	</fieldset>
-																</form>
-															</div>
+			<div class="col-lg-4">
+				<form class="form-horizontal">
+					<b>CUSTOMER DETAILS</b> <br> <br>
 
 
-															<!--  -->
+					<fieldset>
+						<div class="form-group">
+							<div class="col-lg-8 input-group">
+								<input type="text" class="form-control" id="inputName"
+									placeholder="Name"> <span class="input-group-addon"><span
+									class="glyphicon glyphicon-user"></span></span>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-8 input-group">
+								<input type="text" class="form-control" id="inputEmail"
+									placeholder="Email"> <span class="input-group-addon"><span
+									class="glyphicon glyphicon-search"></span></span>
+
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-8 input-group">
+								<input type="number" class="form-control " id="inputContactNo"
+									placeholder="Contact No."> <span
+									class="input-group-addon"><span
+									class="glyphicon glyphicon-search"></span></span>
+
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-lg-8 input-group">
+								<input type="text" class="form-control" id="inputOpName"
+									placeholder="Operator Name"> <span
+									class="input-group-addon"><span
+									class="glyphicon glyphicon-user"></span></span>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-8 input-group">
+								<input type="text" class="form-control" id="terminalName"
+									placeholder="Terminal Name">
 
 
-															<div class=" bs-component col-lg-3">
-																<b>BILLING DETAILS</b> <br>
-																<br>
-																<form class="form-horizontal">
-																	<fieldset>
-																		<div class="form-group">
-																			<div class="col-lg-8 input-group">
-																				<input type="text" class="form-control" id="inputOpName"
-																				placeholder="Operator Name"> <span
-																				class="input-group-addon"><span
-																				class="glyphicon glyphicon-user"></span></span>
-																			</div>
-																		</div>
-																		<div class="form-group">
-																			<div class="col-lg-8 input-group">
-																				<input type="text" class="form-control" id="terminalName"
-																				placeholder="Terminal Name">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-lg-8 input-group">
+								<select class="form-control" id="select">
+									<option>My Corp 1, gs</option>
+									<option>My Corp 2, gs</option>
+								</select>
+							</div>
+
+						</div>
+						<div class="form-group">
+							<div>
+								<button type="reset" class="btn  ">RESET</button>
 
 
-																			</div>
-																		</div>
-																		<div class="form-group">
-																			<div class="col-lg-8 input-group">
-																				<input type="number" class="form-control " id="inputContactNo"
-																				placeholder="Invoice Type">
-
-
-																			</div>
-																		</div>
-																		<div class="form-group">
-																			<div class="col-lg-8 input-group">
-																				<select class="form-control" id="select">
-																					<option>My Corp 1, gs</option>
-																					<option>My Corp 2, gs</option>
-																				</select>
-																			</div>
-
-																		</div>
-
-
-																		<div class="form-group">
-							<!-- <div>
-								<button type="reset" class="btn  ">Reset</button>
-								<button type="submit" class="btn btn-primary ">Save</button>
-							</div> -->
+								<button type="button" class="btn btn-primary"
+									data-toggle="modal" data-target="#myModal">REGISTER
+									NEW USER</button>
+							</div>
 						</div>
 					</fieldset>
 				</form>
 			</div>
-			<!--  -->
 
-			<div class="well  panel panel-primary offset-6 col-lg-6 ">
-
-				<div class="">
-					<div class="">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th>S.No.</th>
-									<th>Item Name</th>
-									<th>Batch Number</th>
-									<th>Quantity</th>
-									<th>Unit</th>
-									<th>Price</th>
-									<th>Tax</th>
-									<th>Discount</th>
-									<th>Cost</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>BEtadine</td>
-									<td>FF3</td>
-									<td>10</td>
-									<td>Pack</td>
-									<td>100</td>
-									<td>5%</td>
-									<td>105</td>
-									<td>1050</td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>BEtadine</td>
-									<td>FF3</td>
-									<td>10</td>
-									<td>Pack</td>
-									<td>100</td>
-									<td>5%</td>
-									<td>105</td>
-									<td>1050</td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>BEtadine</td>
-									<td>FF3</td>
-									<td>10</td>
-									<td>Pack</td>
-									<td>100</td>
-									<td>5%</td>
-									<td>105</td>
-									<td>1050</td>
-								</tr>
-
-								<tr>
-									<td>1</td>
-									<td>BEtadine</td>
-									<td>FF3</td>
-									<td>10</td>
-									<td>Pack</td>
-									<td>100</td>
-									<td>5%</td>
-									<td>105</td>
-									<td>1050</td>
-								</tr>
-
-							</tbody>
-						</table>
-						<div class="">
-						</div>
-
-					</div>
-
-				</div>
-				
-				<div class="">
-					<button type="reset" class="btn btn-default  ">RESET INVOICE</button>
-					<button type="submit" class="btn btn-default ">DELETE INVOICE</button>
-					<button type="submit" class="btn btn-primary ">SAVE INVOICE</button>
-
-					<button type="submit" class="btn btn-primary ">PRINT INVOICE</button>
-
-				</div>
-			</div>
 
 			<!--  -->
-			<div class=" col-lg-6 offset-0">
-				<b>SEARCH ITEM DETAILS </b> <br>
-				<br>
+
+
+			<!--  -->
+
+
+			<!--  -->
+			<div class=" col-lg-8 offset-3">
+				<b>SEARCH ITEM DETAILS TO ADD IN BILL</b> <br> <br>
 				<div class="  ">
 					<form class="form-inline ">
 						<div class="form-group">
 							<input type="number" class="form-control" id="name"
-							placeholder="Item Name">
+								placeholder="Item Name">
 						</div>
 						<div class="form-group">
 							<select class="form-control" id="select">
@@ -283,14 +243,16 @@ ADMIN</b></a></li>
 
 						<div class="form-group">
 							<input type="number" class="form-control" id="name"
-							placeholder="Batch No.">
-						</div><button type="submit" class=" btn " id="resetProdBtn">RESET</button>
-						<button type="submit" class=" btn btn-primary" id="searchProdBtn">SEARCH</button>
+								placeholder="Batch No.">
+						</div>
+						<button type="submit" class=" btn ">RESET</button>
+						<button type="submit" class=" btn btn-primary">SEARCH</button>
 
 					</form>
 				</div>
 				<br>
-				<div class="bs-example">
+				<div
+					style="display: block; border: 1px solid lightgrey; height: 250px; overflow-y: scroll">
 					<table class="table table-hover">
 						<thead class="alert-info">
 							<tr>
@@ -298,26 +260,107 @@ ADMIN</b></a></li>
 								<th>Item Name</th>
 								<th>Batch Number</th>
 								<th>Quantity</th>
-								<th>Expiry Date</th>
 
 							</tr>
+
 						</thead>
 						<tbody>
-							<tr id="prodRow">
-									<td id="type"></td>
-									<td id="name"></td>
-									<td id="bat"></td>
-									<td id="lQty"></td>
-									<td id="expDt"></td>
-								</tr>
-									</tbody>
-								</table>
-								<div>
-									<div class="">
-										<b>ITEM DETAILS</b><br>
+							<tr>
+
+
+								<td>BEtadine</td>
+								<td>FF3</td>
+								<td>10</td>
+								<td>Pack</td>
+
+							</tr>
+							<tr>
+
+
+								<td>BEtadine</td>
+								<td>FF3</td>
+								<td>10</td>
+								<td>Pack</td>
+
+							</tr>
+							<tr>
+
+								<td>BEtadine</td>
+								<td>FF3</td>
+								<td>10</td>
+								<td>Pack</td>
+
+							</tr>
+							<tr>
+
+								<td>BEtadine</td>
+								<td>FF3</td>
+								<td>10</td>
+								<td>Pack</td>
+
+							</tr>
+							<tr>
+
+								<td>BEtadine</td>
+								<td>FF3</td>
+								<td>10</td>
+								<td>Pack</td>
+
+							</tr>
+							<tr>
+
+								<td>BEtadine</td>
+								<td>FF3</td>
+								<td>10</td>
+								<td>Pack</td>
+
+							</tr>
+							<tr>
+
+								<td>BEtadine</td>
+								<td>FF3</td>
+								<td>10</td>
+								<td>Pack</td>
+
+							</tr>
+							<tr>
+
+								<td>BEtadiadineBEtadineine</td>
+								<td>FFFF3FF3FF3FF3FF3FF3FF3FF3</td>
+								<td>101010010101010101010</td>
+								<td>PackPaPackPackPack</td>
+
+							</tr>
+							<tr>
+
+								<td>BEtadine</td>
+								<td>FF3</td>
+								<td>10</td>
+								<td>Pack</td>
+
+							</tr>
+							<tr>
+
+								<td>BEtadine</td>
+								<td>FF3</td>
+								<td>10</td>
+								<td>Pack</td>
+
+							</tr>
+
+
+						</tbody>
+					</table>
+
+
+
+
+				</div>
+				<!-- <div>
+ 										<b>ITEM DETAILS</b><br>
 										<br>
 
-										<div class="  ">
+										<div class="">
 											<form class="form-inline ">
 												<div class="form-group">
 													<input type="number" class="form-control" id="name"
@@ -342,37 +385,279 @@ ADMIN</b></a></li>
 
 												</form>
 											</div>
-										</div>
+										</div> -->
+			</div>
+			<!--  -->
 
-									</div>
-
-								</div>
-							</div>
-							<!--  -->
-
-							<!--  -->
-						</div>
+			<!--  -->
+		</div>
 
 
+	</div>
+
+
+	<!-- c -->
+
+	<!-- // -->
+
+
+
+
+	<!-- // content-->
+
+	<div class=" panel-primary offset-0 col-lg-12 ">
+
+		<div
+			style="display: block; border: 1px solid lightgrey; height: 380px; overflow-y: scroll">
+			<div class="">
+				<table class="table table-hover">
+					<thead class="alert-info">
+						<tr>
+							<th>S.No.</th>
+							<th>Item Name</th>
+							<th>Batch Number</th>
+							<th>Quantity</th>
+							<th>Unit</th>
+							<th>Price</th>
+							<th>Tax</th>
+							<th>Discount</th>
+							<th>Cost</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>BEtadine</td>
+							<td>FF3</td>
+							<td>10</td>
+							<td>Pack</td>
+							<td>100</td>
+							<td>5%</td>
+							<td>105</td>
+							<td>1050</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>BEtadine</td>
+							<td>FF3</td>
+							<td>10</td>
+							<td>Pack</td>
+							<td>100</td>
+							<td>5%</td>
+							<td>105</td>
+							<td>1050</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>BEtadine</td>
+							<td>FF3</td>
+							<td>10</td>
+							<td>Pack</td>
+							<td>100</td>
+							<td>5%</td>
+							<td>105</td>
+							<td>1050</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>BEtadine</td>
+							<td>FF3</td>
+							<td>10</td>
+							<td>Pack</td>
+							<td>100</td>
+							<td>5%</td>
+							<td>105</td>
+							<td>1050</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>BEtadine</td>
+							<td>FF3</td>
+							<td>10</td>
+							<td>Pack</td>
+							<td>100</td>
+							<td>5%</td>
+							<td>105</td>
+							<td>1050</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>BEtadine</td>
+							<td>FF3</td>
+							<td>10</td>
+							<td>Pack</td>
+							<td>100</td>
+							<td>5%</td>
+							<td>105</td>
+							<td>1050</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>BEtadine</td>
+							<td>FF3</td>
+							<td>10</td>
+							<td>Pack</td>
+							<td>100</td>
+							<td>5%</td>
+							<td>105</td>
+							<td>1050</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>BEtadine</td>
+							<td>FF3</td>
+							<td>10</td>
+							<td>Pack</td>
+							<td>100</td>
+							<td>5%</td>
+							<td>105</td>
+							<td>1050</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>BEtadine</td>
+							<td>FF3</td>
+							<td>10</td>
+							<td>Pack</td>
+							<td>100</td>
+							<td>5%</td>
+							<td>105</td>
+							<td>1050</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>BEtadine</td>
+							<td>FF3</td>
+							<td>10</td>
+							<td>Pack</td>
+							<td>100</td>
+							<td>5%</td>
+							<td>105</td>
+							<td>1050</td>
+						</tr>
+
+						<tr>
+							<td>1</td>
+							<td>BEtadine</td>
+							<td>FF3</td>
+							<td>10</td>
+							<td>Pack</td>
+							<td>100</td>
+							<td>5%</td>
+							<td>105</td>
+							<td>1050</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+
+			</div>
+
+		</div>
+
+		<div class=" h4">
+			<form class="form-inline ">
+				<div class="text-left col-lg-8 well">
+
+					<button type="submit" class=" btn btn-default">RESET</button>
+					<button type="submit" class="btn btn-primary ">SAVE</button>
+
+					<div class="form-group">
+						<input type="number" class="form-control" id="name"
+							placeholder="Amount Received">
+					</div>
+					<div class="form-group">
+						<select class="form-control" id="select">
+							<option>Cash</option>
+							<option>Card</option>
+							<option>Cheque</option>
+							<option>DD</option>
+							<option>Advance</option>
+						</select>
 					</div>
 
+					<div class="form-group">
+						<input type="number" class="form-control" id="name"
+							placeholder="Payment Id">
+					</div>
+					<button type="submit" class="btn btn-primary ">CONFIRM
+						PAYMENT</button>
+					<button type="submit" class="btn btn-primary ">PREVIEW</button>
 
-					<!-- c -->
-
+					<button type="submit" class="btn btn-primary ">PRINT</button>
 				</div>
-				<div class="center-block"></div>
-				<!-- // -->
 
-				<div class="">
+				<div class="  h4 text-right text-danger legend col-lg-4">Total
+					[999] items brought for [999999.99] INR</div>
+			</form>
+		</div>
 
 
+
+
+	<!-- Button trigger modal -->
+
+
+	<!-- Modal -->
+	<div class="modal" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">Customer Details</h4>
 				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<div class="col-lg-6 input-group">
+							<input type="text" class="form-control" id="terminalName"
+								placeholder="Terminal Name">
 
 
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-lg-6 input-group">
+							<input type="text" class="form-control" id="terminalName"
+								placeholder="Terminal Name">
 
-				<!-- // content-->
+
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-lg-6 input-group">
+							<input type="text" class="form-control" id="terminalName"
+								placeholder="Terminal Name">
 
 
-				<!-- left nave -->
-			</body>
-			</html>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-lg-6 input-group">
+							<input type="text" class="form-control" id="terminalName"
+								placeholder="Terminal Name">
+
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
+					<button type="button" class="btn btn-primary">SAVE CHANGES</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- left nave -->
+
+	<nav class="btn-default navbar-default navbar-fixed-bottom">
+	<div class="col-lg-6 container text-left"> Copyright MR. MED V1.0.0 [ Gold Plan, 2 Users ]</div>
+		<div class="col-lg-6 container text-right"> Registered to Gaurav Medicals, mrt | Installed on 01/02/2016 | Updated on 21/02/2016</div>
+
+	</nav>
+</body>
+</html>
